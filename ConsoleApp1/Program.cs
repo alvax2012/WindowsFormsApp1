@@ -1,7 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-Console.WriteLine("Hello, World!");
+//Вариант 1
+//Создайте метод ArrMax(), который принимает одномерный массив и возвращает максимальный элемент и его индекс в массиве.
+
+
+
+
+
 //(int index, int Max) ArrMax(int[] numbers)
 //{
 

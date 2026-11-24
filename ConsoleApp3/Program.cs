@@ -1,10 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
+//Вариант 4
+//Вычислить среднее геометрическое четных и сумму нечетных элементов массива С[10].
+
+
 Console.WriteLine("Hello, World!");
 int[] C = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int s = 0;
-float g = 1;
+int g = 1;
 int k = 0;
 
 for (int i = 0; i < C.Length; i++)
