@@ -2,12 +2,13 @@
 using System;
 
 Console.WriteLine("Hello, World!");
-(int Min, int Max) MinMax(int[] numbers)
+(int index, int Max) ArrMax(int[] numbers)
 {
-    int min = numbers.Min();
+    
     int max = numbers.Max();
-    return (min, max);
+    int index = Array.IndexOf(numbers, max);
+    return (index, max);
 }
 
-var (min, max) = MinMax(new int[] { 1, 2, 3, 4, 5 });
-Console.WriteLine($"Min: {min}, Max: {max}");
+var (index, max) = ArrMax(new int[] { 1, 2, 3, 4, 5 });
+Console.WriteLine($"index: {index}, Max: {max}");
