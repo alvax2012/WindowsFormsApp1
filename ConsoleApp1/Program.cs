@@ -17,7 +17,7 @@ int ArrMax1(int[] numbers)
 {
     int index = 0;
     int max = numbers[0];
-    for (int i = 1; i < numbers.Length; i++)
+    for (int i = 0; i < numbers.Length; i++)
     {
         if (max < numbers[i])
         { 
