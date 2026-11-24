@@ -12,22 +12,25 @@ Console.WriteLine("Hello, World!");
 
 //var (index, max) = ArrMax(new int[] { 1, 2, 3, 4, 5 });
 //Console.WriteLine($"index: {index}, Max: {max}");
-int index = 0;
-void ArrMax1(int[] numbers)
-{
 
+int ArrMax1(int[] numbers)
+{
+    int index = 0;
     int max = numbers[0];
     for (int i = 1; i < numbers.Length; i++)
     {
         if (max < numbers[i])
-        { max = numbers[i];
+        { 
+            max = numbers[i];
             index = i;  
         
         }
-
+        
     }
+    Console.WriteLine($"index: {index}");
     Console.WriteLine($"Max: {max}");
+    return index;
 }
-
-ArrMax1(new int[] { 1, 2, 3, 4, 5 });
-Console.WriteLine($"index: {index}");
+int[] A = new int[] { 1, 2, 3, 4, 5 };
+int maxIndex = ArrMax1(A);
+Console.WriteLine($"Max: {A[maxIndex]}");
