@@ -37,6 +37,11 @@ namespace ConsoleApp1
             Console.WriteLine();
 
             Phone2.sendMessage("111", "222");
+
+            Person Person1 = new Person();
+            Person Person2 = new Person("Петров", 30);
+            Person1.talk("111");
+            Person1.talk("222 ");
         }
     }
 
@@ -92,5 +97,43 @@ namespace ConsoleApp1
             }
             
         }
+    }
+
+
+    public class Person
+    {
+        private string fullName;
+        private int age;
+        public string FullName
+        {
+            get => fullName;
+            set => fullName = value;
+        }
+        public int Age
+        {
+            get => age;
+            set => age = value;
+        }
+
+        public Person()
+        {
+            fullName = "Иванов";
+            age = 20;
+        }
+        public Person(string fullName, int age)
+        {
+            this.fullName = fullName;
+            this.age = age;
+        }
+
+        public void move(string s)
+        {
+            
+        }
+        public void talk(string s)
+        {
+            Console.WriteLine($"{fullName} говорит {s}");
+        }
+        
     }
 }
